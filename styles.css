@@ -104,6 +104,12 @@ p {
     position: relative;
 }
 
+.hero-content {
+    margin-top: 150px; /* Aggiungi margine superiore per separare il contenuto dal countdown */
+    padding: 0 20px; /* Padding laterale per evitare che il contenuto tocchi i bordi */
+}
+
+
 .hero h1 {
     font-size: 3.5em;
     margin: 0;
@@ -388,4 +394,9 @@ footer {
     .payment-logo {
         width: 60px;
     }
+
+    .hero-content {
+        margin-top: 200px; /* Maggiore margine per dispositivi mobili */
+    }
 }
+
