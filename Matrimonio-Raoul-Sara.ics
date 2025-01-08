@@ -1,0 +1,10 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+SUMMARY:Matrimonio di Raoul e Sara
+DTSTART:20250120T150000Z
+DTEND:20250120T180000Z
+DESCRIPTION:Festeggiamo insieme il nostro matrimonio!
+LOCATION:Ristorante La Foresta, Via dei Laghi 12, Rocca di Papa
+END:VEVENT
+END:VCALENDAR

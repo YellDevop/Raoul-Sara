@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raoul & Sara Marriage</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <script src="script.js" defer></script>
+    <script src="calendar.js"defer></script>
+</head>
+<!--Ho preso spunto da: https://it.wix.com/website-template/view/html/1868 -->
+
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <div id="countdown-container" class="countdown-container">
+                <div class="countdown-item">
+                    <span id="days">00</span>
+                    <p>Giorni</p>
+                </div>
+                <div class="countdown-item">
+                    <span id="hours">00</span>
+                    <p>Ore</p>
+                </div>
+                <div class="countdown-item">
+                    <span id="minutes">00</span>
+                    <p>Minuti</p>
+                </div>
+                <div class="countdown-item">
+                    <span id="seconds">00</span>
+                    <p>Secondi</p>
+                </div>
+            </div>
+            <h1>Raoul & Sara</h1>
+            <p>Sono felici di annunciare il loro matrimonio e di invitarvi a festeggiare insieme una giornata speciale. 
+                <br>
+                Vi aspettiamo per vivere con noi questo momento unico.</p>
+            <p>Il matrimonio si terrà il <a style="font-size: larger;" href="#" id="calendar-link">17 Maggio 2025</a> presso:</p> 
+            <p class="location">
+                <br>
+                <a href="https://www.ristorantelaforesta.com/" class="sito-location">Ristorante La Foresta</a> 
+                <br>
+                <br>
+                Via dei Laghi 12, Rocca di Papa
+            </p>
+            <p class="time">Ore 17:00</p>
+            <br>
+            <p>Non vediamo l'ora di condividere con voi questo giorno indimenticabile!</p>
+            <br>
+        </div>
+        <img src="separatore.png" alt="Separatore" class="separator-image">
+    </header>
+    
+    <section id="donazioni" class="donation-section">
+        <p style="font-size: larger; text-shadow: #0e361c;" class="subtitle">Per chi desidera farci un regalo, abbiamo pensato a delle modalità semplici <br> per contribuire al nostro futuro insieme:</p>
+
+        <!-- Pannello Bonifico -->
+        <div class="donation-panel bonifico">
+            <h3>Bonifico Bancario</h3>
+            <p><strong>Intestato a:</strong> Sara Iannello</p>
+            <p><strong>IBAN:</strong> IT93U3608105138206652906661</p>
+            <p><strong>Causale:</strong> Un dono da [vostro nome]</p>
+        </div>
+
+        <!-- Pannello PayPal e Satispay -->
+        <div class="donation-panel alternatives">
+            <h3>Altre opzioni</h3>
+            <p class="donazione-alternativa">Se preferisci puoi utilizzare anche PayPal o Satispay!</p>
+            <div class="payment-buttons">
+                <a href="https://www.paypal.com" class="btn paypal-btn" target="_blank">
+                    <img src="paypal-logo.png" alt="PayPal" class="payment-logo">
+                </a>
+                <a href="https://www.satispay.com" class="btn satispay-btn" target="_blank">
+                    <img src="satispay-logo.png" alt="Satispay" class="payment-logo">
+                </a>
+            </div>
+        </div>
+        <img style="transform: scaleY(-1)" src="separatore.png" alt="Separatore" class="separator-image">
+    </section>
+    <footer>
+        <div class="footer-content">
+            <p style="font-size: x-large; color: #0e361c;"><strong>Ogni gesto, grande o piccolo, sarà per noi un prezioso contributo per iniziare questa nuova avventura insieme. Grazie di cuore!</strong></p>
+        </div>
+    </footer>
+</body>
+
+</html>
