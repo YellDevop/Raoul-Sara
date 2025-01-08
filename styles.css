@@ -99,6 +99,7 @@ p {
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     position: relative;
+    margin-top: 50px;
 }
 
 .hero-content {
