@@ -14,18 +14,20 @@ header {
     margin-bottom: 0; /* Riduce lo spazio sotto l'header */
 }
 
-h1 {
+h1, h2 {
     font-family: 'Playfair Display', serif;
     color: #003c01;
     margin-bottom: 15px;
 }
 
-h2 {
-    font-family: 'Playfair Display', serif;
-    color: #003c01;
-    margin-bottom: 15px;
-    font-size:3rem;
+h1 {
+    font-size: 3.5em;
 }
+
+h2 {
+    font-size: 3rem;
+}
+
 p {
     color: #000000;
     line-height: 1.6;
@@ -36,16 +38,14 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: transparent;
-    background-color: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.7);
     padding: 20px 0;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transform:  scale(0.7);
+    transform: scale(0.8);
     transform-origin: center;
 }
 
-/* Countdown Section */
 .countdown-section {
     padding: 50px 20px;
     background: #fff;
@@ -59,7 +59,7 @@ p {
     color: #333;
     justify-content: center;
     gap: 15px;
-    flex-wrap: wrap; /* Per adattarsi ai dispositivi mobili */
+    flex-wrap: wrap;
 }
 
 .countdown-item {
@@ -103,19 +103,17 @@ p {
 }
 
 .hero-content {
-    margin-top: 150px; /* Aggiungi margine superiore per separare il contenuto dal countdown */
+    margin-top: 100px; /* Aggiungi margine superiore per separare il contenuto dal countdown */
     padding: 0 20px; /* Padding laterale per evitare che il contenuto tocchi i bordi */
 }
-
 
 .hero h1 {
     font-size: 3.5em;
     margin: 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .hero p {
-    font-size: 1em;
+    font-size: 1.2em;
     margin: 15px 0;
 }
 
@@ -135,21 +133,10 @@ p {
     text-decoration: bold;
 }
 
-.separator-image {
-    display: block; /* Per far sì che l'immagine sia trattata come un blocco */
-    margin: 1px auto; /* Centra l'immagine orizzontalmente con un margine sopra e sotto */
-    max-width: 100%; /* Adatta l'immagine alla larghezza della pagina, senza superarla */
-    height: 300px; /* Mantieni le proporzioni originali */
-}
-
-.separator-image {
-    background-color: transparent; /* Assicura che lo sfondo sia trasparente */
-}
-
 /* Section Styles */
 .section {
-    margin-top: 0; /* Rimuove o riduce lo spazio sopra la sezione */
-    padding-top: 0; /* Riduce il padding sopra la sezione */
+    margin-top: 0;
+    padding-top: 0;
     padding: 50px 20px;
     background: linear-gradient(to bottom, #ba96974e, #f5f5dc, #ba96974e);
 }
@@ -160,11 +147,11 @@ p {
     top: 0;
     left: 0;
     right: 0;
-    height: 10px; /* Altezza della sfumatura */
+    height: 10px;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
 }
 
-#testo-presentazione{
+#testo-presentazione {
     font-weight: bold;
     font-size: larger;
 }
@@ -173,7 +160,6 @@ p {
     color: #003c01;
     font-size: 3.5em;
     margin: 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .about-image {
@@ -194,7 +180,7 @@ p {
 a {
     color: #000000;
     text-decoration: underline;
-    transition: transform 0.3s ease
+    transition: transform 0.3s ease;
 }
 
 a:hover {
@@ -215,14 +201,12 @@ a:hover {
     color: #003c01;
     font-size: 3.5em;
     margin: 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .donation-panel h3 {
     color: #003c01;
     font-size: 2.5em;
     margin: 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .donation-panel p {
@@ -243,7 +227,7 @@ a:hover {
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap; /* Per rendere il layout più flessibile su mobile */
+    flex-wrap: wrap;
 }
 
 .payment-buttons .btn {
@@ -254,36 +238,19 @@ a:hover {
     color: white;
     transition: all 0.3s ease;
     text-align: center;
-    background-color: transparent; /* Rimuove lo sfondo colorato */
-    border: 2px solid transparent; /* Rimuove eventuali bordi */
-}
-
-.donazione-alternativa {
-    color: #000000;
-    font-weight: bolder;
-    font-style: oblique;
-}
-
-.payment-buttons .paypal-btn {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.payment-buttons .paypal-btn:hover,
-.payment-buttons .satispay-btn:hover {
-    background-color: transparent; /* Mantieni trasparente anche al passaggio del mouse */
+    background-color: transparent;
+    border: 2px solid transparent;
 }
 
 .payment-logo {
-    width: 150px; /* Larghezza personalizzata */
-    height: auto; /* Mantiene le proporzioni */
-    margin: 10px; /* Spazio attorno ai loghi */
-    transition: transform 0.3s ease; /* Animazione al passaggio del mouse */
+    width: 150px;
+    height: auto;
+    margin: 10px;
+    transition: transform 0.3s ease;
 }
 
 .payment-logo:hover {
-    transform: scale(2); /* Ingrandisce leggermente al passaggio del mouse */
+    transform: scale(2);
 }
 
 /* Alternative Panels */
@@ -299,34 +266,34 @@ a:hover {
 
 @keyframes waveRGB {
     0% {
-        color: rgb(0, 128, 0); /* Verde scuro */
+        color: rgb(0, 128, 0);
     }
     25% {
-        color: rgb(3, 137, 3); /* Verde chiaro */
+        color: rgb(3, 137, 3);
     }
     50% {
-        color: rgb(0, 100, 0); /* Verde bosco */
+        color: rgb(0, 100, 0);
     }
     75% {
-        color: rgb(1, 48, 4);  /* Verde scuro */
+        color: rgb(1, 48, 4);
     }
     100% {
-        color: rgb(0, 128, 0);  /* Verde scuro (torna al colore iniziale) */
+        color: rgb(0, 128, 0);
     }
 }
 
 .element {
-    animation: waveRGB 4s ease-in-out infinite; /* Durata dell'animazione, tipo di temporizzazione e loop infinito */
+    animation: waveRGB 4s ease-in-out infinite;
     height: 100px;
     width: 100%;
 }
 
 footer {
-    background: transparent; /* Rimuove il colore di sfondo */
-    padding: 5px 10px; /* Riduci il padding per evitare spazi eccessivi */
+    background: transparent;
+    padding: 5px 10px;
     margin: 0;
     text-align: center;
-    color: #333; /* Colore del testo coerente */
+    color: #333;
 }
 
 /* Media Queries per Mobile */
@@ -339,13 +306,18 @@ footer {
         font-size: 1.2em;
     }
 
+    .cta-button {
+        padding: 12px 30px;
+        font-size: 1.1em;
+    }
+
     .countdown-item {
         font-size: 1em;
         margin: 10px;
     }
 
     .section h2 {
-        font-size: 3em;
+        font-size: 2.5em;
     }
 
     .about-image {
@@ -394,7 +366,7 @@ footer {
     }
 
     .hero-content {
-        margin-top: 200px; /* Maggiore margine per dispositivi mobili */
+        margin-top: 150px; /* Ridotto margine per dispositivi mobili */
     }
 }
 
